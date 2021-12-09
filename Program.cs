@@ -59,10 +59,10 @@ namespace P5FTDStringConverter
                 else if (arg0.Extension == ".txt")
                 {
                     Console.WriteLine($"Attempting to convert { arg0.Name }");
-                    string[] readText = File.ReadAllLines(arg0.FullName, Encoding.GetEncoding(932));
+                    string[] readText = File.ReadAllLines(arg0.FullName, AtlusEncoding.Persona5RoyalEFIGS);
                     var savePath = Path.Combine(Path.GetDirectoryName(args[0]), Path.GetFileNameWithoutExtension(arg0.FullName) + ".ftd");
 
-                    using ( BinaryObjectWriter ftdfile = new BinaryObjectWriter(savePath, Endianness.Big, AtlusEncoding.Persona5RoyalEFIGS))
+                    using (BinaryObjectWriter ftdfile = new BinaryObjectWriter(savePath, Endianness.Big, AtlusEncoding.Persona5RoyalEFIGS))
                     {
                         ftdfile.WriteUInt16(0x0001);
                         ftdfile.WriteUInt16(0x0000);
@@ -104,12 +104,13 @@ namespace P5FTDStringConverter
                             NextPos = ftdfile.Position;
                             i++;
                         }
-                        ftdfile.Seek( 8, SeekOrigin.Begin );
-                        ftdfile.WriteUInt32( (UInt32)ftdfile.Length ); // fix filesize
+                        ftdfile.Seek(8, SeekOrigin.Begin);
+                        ftdfile.WriteUInt32((UInt32)ftdfile.Length); // fix filesize
                         ftdfile.Dispose();
                         Console.WriteLine($"File saved to {savePath}");
                     }
                 }
+                else Console.WriteLine("https://youtu.be/Uuw6PdJvW88");
             }
         }
     }
