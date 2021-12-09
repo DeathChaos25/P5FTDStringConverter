@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Amicitia.IO">
+      <HintPath>..\..\Amicitia.IO\src\Amicitia.IO\bin\Debug\netstandard2.1\Amicitia.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="AtlusScriptLibrary">
+      <HintPath>..\..\Atlus-Script-Tools\Source\AtlusScriptLibrary\obj\Debug\AtlusScriptLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
