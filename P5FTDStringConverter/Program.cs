@@ -91,6 +91,7 @@ namespace P5FTDStringConverter
                             ftdfile.WriteByte(1);
                             ftdfile.WriteUInt16(0);
                             ftdfile.WriteString(StringBinaryFormat.FixedLength, s, s.Length);
+                            ftdfile.WriteByte(0);
 
                             int targetPadding = (int)((0x10 - ftdfile.Position % 0x10) % 0x10);
                             if (targetPadding > 0)
