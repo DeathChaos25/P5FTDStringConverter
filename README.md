@@ -2,7 +2,7 @@
 Converts to/from Persona 5 pointer based text FTD files
 
 # Requirements  
-.NET 5.0 Desktop Runtime: https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-5.0.12-windows-x64-installer  
+[![dotnet 9/0](https://img.shields.io/badge/dotnet%20version-net9.0-blue)](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
   
     
  # Dependencies  
