@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "P5FTDStringConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Github\\P5FTDStringConverter\\P5FTDStringConverter\\bin\\Debug\\net9.0\\FLDPLACENAME.txt\""
+    }
+  }
+}

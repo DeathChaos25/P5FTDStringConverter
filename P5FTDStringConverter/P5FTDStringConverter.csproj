@@ -3,16 +3,22 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
 	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="Amicitia.IO">
-      <HintPath>..\..\Amicitia.IO\src\Amicitia.IO\bin\Debug\netstandard2.1\Amicitia.IO.dll</HintPath>
+      <HintPath>ref\Amicitia.IO.dll</HintPath>
     </Reference>
     <Reference Include="AtlusScriptLibrary">
-      <HintPath>..\..\Atlus-Script-Tools\Source\AtlusScriptLibrary\obj\Debug\AtlusScriptLibrary.dll</HintPath>
+      <HintPath>ref\AtlusScriptLibrary.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Charsets\P5R_EFIGS.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
